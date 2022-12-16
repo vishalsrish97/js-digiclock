@@ -1,0 +1,91 @@
+*{
+	box-sizing:border-box;
+}
+.container{
+	width:100%;
+}
+.digiclock{
+	width:440px;
+	height:auto;
+	background-color:black;
+	border-radius:10px;
+	padding:20px;	
+}
+.border{
+	border:2px solid white;
+	border-radius:10px;
+}
+.calender{
+	display:flex;
+	justify-content:space-evenly;
+}
+.d{
+	display:inline-block;
+	margin:20px;		
+}
+.d p,span{
+	color:white;
+}
+.d2 span{
+	padding:5px;
+	border:1px solid white;
+}
+
+
+.time{
+	display:flex;
+	justify-content:space-evenly;
+	margin:30px;
+	margin-top:20px;
+}
+.t1 span{
+	border:1px solid white;
+	padding:10px;
+}
+.dot{
+	width:10px;
+	height:10px;
+	border-radius:50px;
+	background-color:white;
+}
+.ampm{
+	color:white;
+}
+.temp{
+	display:flex;
+	justify-content:center;
+	margin-bottom:20px;
+}
+.temp span{
+	margin:5px;
+}
+.temp-box{
+	border:1px solid white;
+}	
+.active{
+	justify-content:space-around;
+	padding:4px;
+}
+.weeks{
+	margin-bottom:20px;
+}
+
+.weeks span{
+	position:relative;
+	margin:0px 5px;
+	padding-top:10px;
+}
+.weeks span:after{
+	content:"";
+	width:10px;
+	height:10px;
+	border-radius:50%;
+	background-color:white;
+	position:absolute;
+	left:50%;
+	top:20%;
+	transform:translate(-50%, -50%);
+}
+.day.active:after{
+	background-color:red;
+}
